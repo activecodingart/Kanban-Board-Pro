@@ -1,0 +1,92 @@
+
+body {
+	font-size: 18px;
+	background: url("../img/tweed.png");
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.board {
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.board h1 {
+	color: aliceblue;
+}
+.create-column {
+	margin-bottom: 20px;
+	line-height: 19px;
+}
+.column-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-bottom: 10px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.column {
+	position: relative;
+	margin: 0 20px;
+	min-width: 270px;
+	width: 270px;
+	min-height: 150px;
+}
+.column-title {
+	margin: 0 0 7px;
+	padding: 10px 30px 10px 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 24px;
+}
+.add-card {
+	margin: 0 0 7px 10px;
+}
+.btn-delete-column {
+	position: absolute;
+	margin-right: 10px;
+	top: 12px;
+	right: 0;
+}
+.panel {
+	background: #E0E0E0;
+}
+.panel .column-card-list {
+	height: 100%;
+	max-height:  calc(100% - 88px);
+	margin-bottom: 5px;
+	overflow-y: auto;
+}
+.card {
+	min-height: 20px;
+	padding: 7px 5px;
+	margin: 0 5px 5px;
+}
+.card p {
+	margin: 0;
+	cursor: pointer;
+}
+.card p:active {
+	cursor: -webkit-grabbing;
+}
+.card-placeholder {
+	background-color: #b5b5b5;
+	margin: 7px 5px;
+	min-height: 40px;
+}
